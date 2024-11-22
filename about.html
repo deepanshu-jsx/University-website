@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUFORD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="#"><img src="images/logo.png" alt="LOGO"></a>
+            <div class="nav-link" id="NavLink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>About Us</h1>
+    </div>
+
+    <!--about us page -->
+      <section class="A-U-P" >
+         <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error temporibus dolorum sequi ad numquam, repellendus neque, veniam dolorem eligendi in cupiditate rem qui doloribus quae alias optio nihil voluptas. Enim?</p>
+                <a href="" class="hero-btn red">Explore know</a>
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+         </div>
+      </section>
+
+        <!--footer-->
+        <section class="footer">
+            <h4> About Us </h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed id quasi earum quidem, <br>doloremque accusantium? Commodi vitae libero necessitatibus eius?</p>
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#">  <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+
+    <script>
+
+        //javascipt for toggle menu 
+        let Navlink = document.getElementById("NavLink");
+
+        function showMenu() {
+            Navlink.style.right = "0px";
+        }
+
+        function hideMenu() {
+            Navlink.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDUFORD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href="#"><img src="images/logo.png" alt="LOGO"></a>
+            <div class="nav-link" id="NavLink">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </div>
+
+    <!-- Conatct us -->
+     <div class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112422.99638708452!2d77.30158856704777!3d28.567852068013448!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce8a5ae8c9d01%3A0x2688f364aa91f8ea!2sSector%20110%2C%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1731131307594!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen=""     referrerpolicy="no-referrer-when-downgrade" loading ="fast"></iframe>
+     </div>
+
+     <div class="contact-us">
+
+        <div class="row">
+            <div class="contact-col">
+               <div>
+                <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>XYZ Road ABC building</h5>
+                    <p>Noida , Utter Pradesh , IN</p>
+                </span>
+               </div>
+               <div>
+                <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>info@gmail.com</h5>
+                   <p>Emial us your quary </p>
+                </span>
+               </div>
+               <div>
+                <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>+5478441 54</h5>
+                    <p>Monday to Saturday , 10AM to 6PM</p>
+                </span>
+               </div>
+            </div>
+          <div class="contact-col">
+            <form class="contact">
+                 <input type="text" required placeholder="Enter your name">
+                 <input type="email" required placeholder="Enter your email">
+                 <input type="text" placeholder="Enter your subject " required>
+                 <textarea rows="8" placeholder="Message"></textarea>
+                 <button type="submit" class="hero-btn red">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    
+   
+   
+        <!--footer-->
+        <section class="footer">
+            <h4> About Us </h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed id quasi earum quidem, <br>doloremque accusantium? Commodi vitae libero necessitatibus eius?</p>
+            <div class="icon">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#">  <i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </section>
+
+    <script>
+
+        //javascipt for toggle menu 
+        let Navlink = document.getElementById("NavLink");
+
+        function showMenu() {
+            Navlink.style.right = "0px";
+        }
+
+        function hideMenu() {
+            Navlink.style.right = "-200px";
+        }
+
+
+    </script>
+</body>
+
+</html>
